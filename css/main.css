@@ -174,6 +174,25 @@ p {
   transition: all 0.3s ease;
 }
 
+.jumbotron {
+  min-height: 100vh;
+  background-color: #051631;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jumbotron-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid rgba(229, 233, 240, 0.25);
+  text-transform: uppercase;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 1000px;
+  letter-spacing: 0.7px;
+}
+
 .navbar {
   max-height: unset;
 }
@@ -181,5 +200,8 @@ p {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+  .navbar-nav {
+    margin-left: 16.5rem !important;
   }
 }/*# sourceMappingURL=main.css.map */
