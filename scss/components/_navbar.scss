@@ -1,0 +1,68 @@
+.navbar {
+    background-color: $textDark !important;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    max-height: 80px;
+
+    &-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .active {
+        display: inline-flex;
+        flex-direction: column;
+        color: $textLight !important;
+
+        &::after {
+            content: "";
+            margin: auto;
+            display: inline-block;
+            height: 3px;
+            width: 3px;
+            border-radius: 100px;
+            background-color: $primary;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &-right {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.nav {
+    &-link {
+        color: $textLightSecondary !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        display: inline-flex;
+        flex-direction: column;
+
+        &:hover {
+            &::after {
+                height: 3px;
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: "";
+            margin: auto;
+            display: inline-block;
+            height: 3px;
+            width: 0px;
+            border-radius: 100px;
+            background-color: $primary;
+            transition: all 0.3s ease;
+        }
+    }
+}

@@ -60,15 +60,29 @@ p {
   padding: 0.75rem 1.5rem;
   color: white;
   border-radius: 4px;
-  border: 1px solid #0062ff;
+  border: 1px solid #0062ff !important;
+  font-size: 14px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.btn-outline:hover {
+  color: #0062ff !important;
 }
 .btn-outline--small {
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border: 1px solid #0062ff;
+  border: 1px solid #0062ff !important;
   color: white;
   border-radius: 4px;
+  font-size: 14px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.btn-outline--small:hover {
+  color: #0062ff !important;
 }
 
 .btn-primary {
@@ -77,13 +91,95 @@ p {
   padding: 0.75rem 1.5rem;
   color: white;
   border-radius: 4px;
-  background-color: #0062ff;
+  background-color: #0062ff !important;
+  font-size: 14px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #003ea0 !important;
 }
 .btn-primary--small {
   display: inline-block;
   text-decoration: none;
-  background-color: #0062ff;
+  background-color: #0062ff !important;
   padding: 0.5rem 1rem;
   color: white;
   border-radius: 4px;
+  font-size: 14px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.btn-primary--small:hover {
+  background-color: #003ea0 !important;
+}
+
+.navbar {
+  background-color: #051631 !important;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  max-height: 80px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar .active {
+  display: inline-flex;
+  flex-direction: column;
+  color: #e5e9f0 !important;
+}
+.navbar .active::after {
+  content: "";
+  margin: auto;
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 100px;
+  background-color: #0062ff;
+}
+.navbar-nav {
+  display: flex;
+  gap: 3rem;
+}
+.navbar-right {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #8eaad7 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  display: inline-flex;
+  flex-direction: column;
+}
+.nav-link:hover::after {
+  height: 3px;
+  width: 100%;
+}
+.nav-link::after {
+  content: "";
+  margin: auto;
+  display: inline-block;
+  height: 3px;
+  width: 0px;
+  border-radius: 100px;
+  background-color: #0062ff;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  max-height: unset;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }/*# sourceMappingURL=main.css.map */
