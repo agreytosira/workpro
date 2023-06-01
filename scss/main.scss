@@ -4,6 +4,9 @@
 @import "base/typography";
 @import "base/shadows";
 
+// Import mixins
+@import "mixins/buttons";
+
 // Import components
 @import "components/buttons";
 @import "components/navbar";
