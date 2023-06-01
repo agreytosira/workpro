@@ -88,13 +88,10 @@
     }
 
     &__subtitle {
-        font-size: 14px;
-        font-weight: 700;
+        @include subtitle();
         border: 2px solid rgba($color: $textLight, $alpha: 0.25);
-        text-transform: uppercase;
         color: $textLight !important;
         padding: 0.5rem 1rem;
         border-radius: 1000px;
-        letter-spacing: 1px;
     }
 }

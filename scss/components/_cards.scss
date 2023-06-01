@@ -8,6 +8,12 @@
     border: 1px solid $borderGrey;
     border-radius: 0.5rem;
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     &__image {
         height: 48px;
         width: 48px;
@@ -37,6 +43,7 @@
 
     &__types {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         align-items: center;
         color: $textDarkSecondary;

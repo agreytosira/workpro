@@ -6,6 +6,7 @@
 
 // Import mixins
 @import "mixins/buttons";
+@import "mixins/typography";
 
 // Import components
 @import "components/buttons";
@@ -17,6 +18,7 @@
 @import "sections/jumbotron";
 @import "sections/sponsor";
 @import "sections/recent";
+@import "sections/services";
 
 // Import Responsiveness
 @import "responsives/mobile";
