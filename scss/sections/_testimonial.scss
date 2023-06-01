@@ -1,0 +1,81 @@
+.testimonial {
+    margin: 5rem 0px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__text {
+        color: $textDark;
+        margin-bottom: 2rem;
+    }
+
+    &__content {
+        padding-left: 2rem;
+        border-left: 5px solid $primary;
+    }
+
+    &__quote {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        width: 50%;
+    }
+
+    &__subtitle {
+        @include subtitle();
+        color: $primary;
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: flex;
+            width: 75px;
+            height: 0px;
+            margin-right: 1rem;
+            border-bottom: 1px solid $primary;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            align-items: center;
+        }
+
+        &-right {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+
+    &__profile {
+        border-radius: 0.25rem;
+        margin-right: 1rem;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        color: $textDark;
+    }
+
+    &__job {
+        font-weight: 600;
+        font-size: 14px;
+        color: $textDarkSecondary;
+    }
+}

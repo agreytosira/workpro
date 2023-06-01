@@ -6,6 +6,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  color: #567099;
 }
 
 h1,
@@ -14,6 +15,7 @@ h3,
 h4,
 h5.h6 {
   font-family: "Playfair Display", serif;
+  color: #051631;
 }
 
 h1 {
@@ -140,6 +142,29 @@ p {
   aspect-ratio: square;
 }
 
+.btn-slide-left {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background-color: #cee1ff;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  height: 38px;
+}
+.btn-slide-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background-color: #0062ff;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  height: 38px;
+}
+
 .navbar {
   background-color: #051631 !important;
   display: flex;
@@ -174,6 +199,9 @@ p {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.navbar-right li {
+  list-style: none;
 }
 
 .nav-link {
@@ -427,6 +455,7 @@ p {
 .services__list-title {
   font-size: 20px;
   font-weight: 600;
+  color: #051631;
 }
 .services__list-title span {
   font-size: 16px;
@@ -473,6 +502,77 @@ p {
   height: 0px;
   margin-right: 1rem;
   border-bottom: 1px solid #0062ff;
+}
+
+.testimonial {
+  margin: 5rem 0px;
+}
+.testimonial__row {
+  display: flex;
+  align-items: center;
+}
+.testimonial__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.testimonial__text {
+  color: #051631;
+  margin-bottom: 2rem;
+}
+.testimonial__content {
+  padding-left: 2rem;
+  border-left: 5px solid #0062ff;
+}
+.testimonial__quote {
+  margin-bottom: 1rem;
+}
+.testimonial__title {
+  width: 50%;
+}
+.testimonial__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0062ff;
+  display: inline-flex;
+  align-items: center;
+}
+.testimonial__subtitle::before {
+  content: "";
+  display: flex;
+  width: 75px;
+  height: 0px;
+  margin-right: 1rem;
+  border-bottom: 1px solid #0062ff;
+}
+.testimonial__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial__footer-left {
+  display: flex;
+  align-items: center;
+}
+.testimonial__footer-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.testimonial__profile {
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+}
+.testimonial__name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #051631;
+}
+.testimonial__job {
+  font-weight: 600;
+  font-size: 14px;
+  color: #567099;
 }
 
 .navbar {
