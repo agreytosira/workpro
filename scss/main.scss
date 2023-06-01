@@ -8,10 +8,12 @@
 @import "components/buttons";
 @import "components/navbar";
 @import "components/footer";
+@import "components/cards";
 
 // Import Sections
 @import "sections/jumbotron";
 @import "sections/sponsor";
+@import "sections/recent";
 
 // Import Responsiveness
 @import "responsives/mobile";

@@ -1,0 +1,73 @@
+.job-card {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid $borderGrey;
+    border-radius: 0.5rem;
+
+    &__image {
+        height: 48px;
+        width: 48px;
+        aspect-ratio: square;
+        box-shadow: $profileShadow;
+        border-radius: 8px;
+
+        img {
+            aspect-ratio: square;
+            height: 48px;
+            width: 48px;
+            border-radius: 8px;
+        }
+    }
+
+    &__position {
+        font-size: 18px;
+        font-weight: 600;
+        color: $textDark;
+    }
+
+    &__company {
+        font-size: 14px;
+        font-weight: 600;
+        color: $primary;
+    }
+
+    &__types {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: $textDarkSecondary;
+    }
+
+    &__category,
+    &__location {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        img {
+            aspect-ratio: square;
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+
+        .btn-outline--small {
+            width: 100%;
+            text-align: center;
+            color: $primary !important;
+
+            &:hover {
+                color: $textDark !important;
+                border: 1px solid $textDark !important;
+            }
+        }
+    }
+}

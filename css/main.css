@@ -127,6 +127,23 @@ p {
   background-color: #003ea0 !important;
 }
 
+.btn-gray {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e2e2;
+  outline: none;
+  background-color: #e2e2e2;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  outline: none !important;
+  aspect-ratio: square;
+}
+
 .navbar {
   background-color: #051631 !important;
   display: flex;
@@ -185,6 +202,69 @@ p {
   transition: all 0.3s ease;
 }
 
+.job-card {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+}
+.job-card__image {
+  height: 48px;
+  width: 48px;
+  aspect-ratio: square;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.job-card__image img {
+  aspect-ratio: square;
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+}
+.job-card__position {
+  font-size: 18px;
+  font-weight: 600;
+  color: #051631;
+}
+.job-card__company {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0062ff;
+}
+.job-card__types {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #567099;
+}
+.job-card__category, .job-card__location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.job-card__category img, .job-card__location img {
+  aspect-ratio: square;
+  height: 16px;
+  width: 16px;
+}
+.job-card__buttons {
+  display: flex;
+  gap: 10px;
+}
+.job-card__buttons .btn-outline--small {
+  width: 100%;
+  text-align: center;
+  color: #0062ff !important;
+}
+.job-card__buttons .btn-outline--small:hover {
+  color: #051631 !important;
+  border: 1px solid #051631 !important;
+}
+
 .jumbotron {
   min-height: 100vh;
   background-color: #051631;
@@ -192,7 +272,7 @@ p {
 }
 .jumbotron__search {
   background-color: white;
-  box-shadow: 5 5 10 rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   margin-top: -2.5rem !important;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -296,6 +376,37 @@ p {
   width: 100%;
   flex: 1;
   height: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.recent {
+  margin: 5rem 0;
+}
+.recent__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.recent__title {
+  margin-bottom: 0;
+}
+.recent__description {
+  color: #567099;
+}
+.recent__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.recent__content {
+  display: flex;
+  align-items: center;
+}
+.recent__footer {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
