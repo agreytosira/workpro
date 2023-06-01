@@ -274,6 +274,30 @@ p {
   letter-spacing: 1px;
 }
 
+.sponsor {
+  padding: 3rem 0;
+}
+.sponsor__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsor__container p {
+  color: #567099;
+  margin-bottom: 2rem;
+}
+.sponsor__logo {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sponsor__logo > * {
+  width: 100%;
+  flex: 1;
+  height: 48px;
+}
+
 .navbar {
   max-height: unset;
 }
