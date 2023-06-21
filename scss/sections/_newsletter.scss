@@ -1,0 +1,48 @@
+.newsletter {
+    &__container {
+        background-color: $textDark;
+        padding: 3rem 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        border-radius: 1rem;
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: $textDarkSecondary;
+        }
+    }
+
+    &__subtitle {
+        @include subtitle();
+        border: 2px solid rgba($color: $textLight, $alpha: 0.25);
+        color: $textLight !important;
+        padding: 0.5rem 1rem;
+        border-radius: 1000px;
+    }
+
+    &__input {
+        padding: 0.5rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        img {
+            padding-left: 1rem;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+}

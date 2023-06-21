@@ -2,6 +2,18 @@
     max-height: unset;
 }
 
+// Mobile
+@media screen and (max-width: 768px) {
+    .testimonial {
+        &__right {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+// Desktop
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
