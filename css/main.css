@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+#category:-webkit-autofill,
+#category:-webkit-autofill:hover,
+#category:-webkit-autofill:focus,
+#category:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: transparent !important;
+}
+
+#location:-webkit-autofill,
+#location:-webkit-autofill:hover,
+#location:-webkit-autofill:focus,
+#location:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: transparent !important;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #567099;
@@ -647,6 +663,12 @@ p {
   margin-bottom: -10rem;
   position: relative;
 }
+.newsletter__input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
 .newsletter__container {
   background-color: #051631;
   padding: 3rem 12rem;
@@ -679,6 +701,7 @@ p {
   border-radius: 0.5rem;
   width: 60%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
 }
@@ -698,6 +721,28 @@ p {
   background-color: transparent !important;
 }
 
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .navbar-nav {
+    margin-left: 16.5rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .jumbotron__title {
+    text-align: center;
+  }
+  .testimonial__title {
+    width: 100%;
+  }
+  .newsletter__input {
+    flex-direction: row !important;
+  }
+  .newsletter__group {
+    width: 80%;
+  }
+}
 .navbar {
   max-height: unset;
 }
@@ -728,6 +773,10 @@ p {
     font-size: 12px;
     line-height: 22px;
   }
+  a.btn-primary {
+    width: 100%;
+    text-align: center;
+  }
   .navbar {
     padding: 1rem;
   }
@@ -748,11 +797,15 @@ p {
   }
   .navbar-right > li {
     display: block;
+    width: 100%;
   }
   .navbar-right > li a {
+    width: 100%;
     text-align: center;
   }
   .jumbotron {
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -770,9 +823,10 @@ p {
     width: 100%;
   }
   .jumbotron__banner {
-    width: 90%;
+    width: 100%;
   }
   .jumbotron__search {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -787,7 +841,11 @@ p {
     width: 75%;
   }
   .recent {
+    padding: 0 1rem;
     margin: 2.5rem 0;
+  }
+  .recent__container {
+    gap: 1.5rem;
   }
   .recent__title {
     text-align: center;
@@ -797,7 +855,7 @@ p {
     gap: 1rem;
   }
   .services {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
   }
   .services__left {
     height: 75%;
@@ -813,6 +871,13 @@ p {
   }
   .testimonial {
     margin: 2.5rem 0;
+    padding: 0 1rem;
+  }
+  .testimonial__profile {
+    margin-right: 0.5rem;
+  }
+  .testimonial__job {
+    line-height: 20px;
   }
   .testimonial__title {
     width: 100%;
@@ -822,6 +887,10 @@ p {
   }
   .testimonial__content {
     padding-left: 1rem;
+  }
+  .newsletter__subtitle {
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
   }
   .newsletter__container {
     width: 90%;
@@ -833,6 +902,13 @@ p {
     width: 100%;
     background: none;
     padding: 0;
+    gap: 1rem;
+  }
+  .newsletter__group img {
+    width: 20px;
+  }
+  .newsletter__group input[type=email] {
+    font-size: 14px;
   }
   .newsletter__input {
     width: 100%;
@@ -856,12 +932,16 @@ p {
   .footer hr {
     margin: 0.25rem 0;
   }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
+  .footer ul li {
+    font-size: 14px;
   }
-  .navbar-nav {
-    margin-left: 16.5rem !important;
+}
+@media screen and (max-width: 320px) {
+  .testimonial__footer {
+    flex-direction: column;
+  }
+  .testimonial__footer-right {
+    margin-top: 1rem;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=main.css.map */

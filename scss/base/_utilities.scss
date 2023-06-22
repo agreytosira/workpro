@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#category:-webkit-autofill,
+#category:-webkit-autofill:hover,
+#category:-webkit-autofill:focus,
+#category:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    background-color: transparent !important;
+}
+
+#location:-webkit-autofill,
+#location:-webkit-autofill:hover,
+#location:-webkit-autofill:focus,
+#location:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    background-color: transparent !important;
+}

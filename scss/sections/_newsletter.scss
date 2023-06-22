@@ -2,6 +2,13 @@
     margin-bottom: -10rem;
     position: relative;
 
+    &__input {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
     &__container {
         background-color: $textDark;
         padding: 3rem 12rem;
@@ -35,6 +42,7 @@
         border-radius: 0.5rem;
         width: 60%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
 
