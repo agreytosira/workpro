@@ -703,6 +703,80 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .font-small {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-nav {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 !important;
+  }
+  .navbar-right {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+  .navbar-right > li {
+    display: block;
+  }
+  .navbar-right > li a {
+    text-align: center;
+  }
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jumbotron__subtitle {
+    text-align: center;
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .jumbotron__title {
+    text-align: center;
+  }
+  .jumbotron__description {
+    width: 100%;
+  }
+  .jumbotron__banner {
+    width: 90%;
+  }
+  .jumbotron__search {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
   .testimonial__right img {
     display: none;
   }
