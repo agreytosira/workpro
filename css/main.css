@@ -786,6 +786,9 @@ p {
   .sponsor__logo img {
     width: 75%;
   }
+  .recent {
+    margin: 2.5rem 0;
+  }
   .recent__title {
     text-align: center;
   }
@@ -807,6 +810,9 @@ p {
     height: 350px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .testimonial {
+    margin: 2.5rem 0;
   }
   .testimonial__title {
     width: 100%;
@@ -839,6 +845,10 @@ p {
   }
   .newsletter__input img {
     padding: 0;
+  }
+  .footer {
+    padding: 5rem 1rem;
+    padding-top: 14rem;
   }
   .footer__col:nth-child(1) {
     margin-bottom: 1rem;
