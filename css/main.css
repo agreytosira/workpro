@@ -673,7 +673,7 @@ p {
   padding: 0.5rem 1rem;
   border-radius: 1000px;
 }
-.newsletter__input {
+.newsletter__group {
   padding: 0.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -682,10 +682,10 @@ p {
   align-items: center;
   gap: 0.5rem;
 }
-.newsletter__input img {
+.newsletter__group img {
   padding-left: 1rem;
 }
-.newsletter__input input[type=email] {
+.newsletter__group input[type=email] {
   width: 100%;
   border: none;
   outline: none;
@@ -777,8 +777,74 @@ p {
     flex-direction: column;
     align-items: stretch;
   }
+  .sponsor__description {
+    text-align: center;
+  }
+  .sponsor__logo {
+    flex-direction: column;
+  }
+  .sponsor__logo img {
+    width: 75%;
+  }
+  .recent__title {
+    text-align: center;
+  }
+  .recent__content .job-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .services {
+    padding: 2.5rem 0;
+  }
+  .services__left {
+    height: 75%;
+  }
+  .services__right {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .services__image {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .testimonial__title {
+    width: 100%;
+  }
   .testimonial__right img {
     display: none;
+  }
+  .testimonial__content {
+    padding-left: 1rem;
+  }
+  .newsletter__container {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+  }
+  .newsletter__group {
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  .newsletter__input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+  }
+  .newsletter__input img {
+    padding: 0;
+  }
+  .footer__col:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+  .footer hr {
+    margin: 0.25rem 0;
   }
 }
 @media screen and (min-width: 1280px) {

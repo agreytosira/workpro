@@ -89,11 +89,105 @@
         }
     }
 
+    .sponsor {
+        &__description {
+            text-align: center;
+        }
+
+        &__logo {
+            flex-direction: column;
+
+            img {
+                width: 75%;
+            }
+        }
+    }
+
+    .recent {
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            .job-card {
+                padding: 1rem;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .services {
+        padding: 2.5rem 0;
+
+        &__left {
+            height: 75%;
+        }
+
+        &__right {
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        &__image {
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+
     .testimonial {
+        &__title {
+            width: 100%;
+        }
+
         &__right {
             img {
                 display: none;
             }
+        }
+
+        &__content {
+            padding-left: 1rem;
+        }
+    }
+
+    .newsletter {
+        &__container {
+            width: 90%;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        &__group {
+            flex-direction: column;
+            width: 100%;
+            background: none;
+            padding: 0;
+        }
+
+        &__input {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 0.25rem;
+
+            img {
+                padding: 0;
+            }
+        }
+    }
+
+    .footer {
+        &__col {
+            &:nth-child(1) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        hr {
+            margin: 0.25rem 0;
         }
     }
 }
