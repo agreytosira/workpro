@@ -690,6 +690,13 @@ p {
   border: none;
   outline: none;
 }
+.newsletter #email:-webkit-autofill,
+.newsletter #email:-webkit-autofill:hover,
+.newsletter #email:-webkit-autofill:focus,
+.newsletter #email:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: transparent !important;
+}
 
 .navbar {
   max-height: unset;

@@ -48,4 +48,12 @@
             outline: none;
         }
     }
+
+    #email:-webkit-autofill,
+    #email:-webkit-autofill:hover,
+    #email:-webkit-autofill:focus,
+    #email:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        background-color: transparent !important;
+    }
 }
