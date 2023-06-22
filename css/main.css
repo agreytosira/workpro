@@ -287,6 +287,9 @@ p {
 .footer__col ul li a:hover {
   color: #fff;
 }
+.footer__copyright {
+  color: #fff !important;
+}
 
 .job-card {
   margin-top: 1.5rem;
