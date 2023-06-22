@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+    .jumbotron {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .testimonial {
+        &__title {
+            width: 100%;
+        }
+    }
+
+    .newsletter {
+        &__input {
+            flex-direction: row !important;
+        }
+
+        &__group {
+            width: 80%;
+        }
+    }
+}
