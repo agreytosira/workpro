@@ -747,6 +747,13 @@ p {
   max-height: unset;
 }
 
+select,
+select:focus,
+option,
+option:focus {
+  background: none;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 48px;

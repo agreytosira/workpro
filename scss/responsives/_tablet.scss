@@ -2,6 +2,13 @@
     max-height: unset;
 }
 
+select,
+select:focus,
+option,
+option:focus {
+    background: none;
+}
+
 // Tablet
 @media screen and (max-width: 768px) {
     h1 {
